@@ -5,7 +5,7 @@ from tkinter.filedialog import askopenfile
 # Open file dialog
 book = askopenfile(mode="rb")
 
-if book:  # Ensure a file was selected
+if book:  # Ensure that a pdf file was selected by user
     pdfreader = PdfReader(book)
     pages = len(pdfreader.pages)
 
